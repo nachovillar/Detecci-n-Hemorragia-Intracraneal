@@ -1,1 +1,1 @@
-# Detecci-n-Hemorragia-Intracraneal
+# Deteccion-Hemorragia-Intracraneal
