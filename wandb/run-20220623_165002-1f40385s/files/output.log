@@ -1,0 +1,308 @@
+
+YOLOv5 temporarily requires wandb version 0.12.10 or below. Some features may not work as expected.
+Downloading https://github.com/ultralytics/yolov5/releases/download/v6.1/yolov5x6.pt to yolov5x6.pt...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████| 270M/270M [07:53<00:00, 597kB/s]
+Overriding model.yaml nc=80 with nc=6
+                 from  n    params  module                                  arguments
+  0                -1  1      8800  models.common.Conv                      [3, 80, 6, 2, 2]
+  1                -1  1    115520  models.common.Conv                      [80, 160, 3, 2]
+  2                -1  4    309120  models.common.C3                        [160, 160, 4]
+  3                -1  1    461440  models.common.Conv                      [160, 320, 3, 2]
+  4                -1  8   2259200  models.common.C3                        [320, 320, 8]
+  5                -1  1   1844480  models.common.Conv                      [320, 640, 3, 2]
+  6                -1 12  13125120  models.common.C3                        [640, 640, 12]
+  7                -1  1   5531520  models.common.Conv                      [640, 960, 3, 2]
+  8                -1  4  11070720  models.common.C3                        [960, 960, 4]
+  9                -1  1  11061760  models.common.Conv                      [960, 1280, 3, 2]
+ 10                -1  4  19676160  models.common.C3                        [1280, 1280, 4]
+ 11                -1  1   4099840  models.common.SPPF                      [1280, 1280, 5]
+ 12                -1  1   1230720  models.common.Conv                      [1280, 960, 1, 1]
+ 13                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 14           [-1, 8]  1         0  models.common.Concat                    [1]
+ 15                -1  4  11992320  models.common.C3                        [1920, 960, 4, False]
+ 16                -1  1    615680  models.common.Conv                      [960, 640, 1, 1]
+ 17                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 18           [-1, 6]  1         0  models.common.Concat                    [1]
+ 19                -1  4   5332480  models.common.C3                        [1280, 640, 4, False]
+ 20                -1  1    205440  models.common.Conv                      [640, 320, 1, 1]
+ 21                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 22           [-1, 4]  1         0  models.common.Concat                    [1]
+ 23                -1  4   1335040  models.common.C3                        [640, 320, 4, False]
+ 24                -1  1    922240  models.common.Conv                      [320, 320, 3, 2]
+ 25          [-1, 20]  1         0  models.common.Concat                    [1]
+ 26                -1  4   4922880  models.common.C3                        [640, 640, 4, False]
+ 27                -1  1   3687680  models.common.Conv                      [640, 640, 3, 2]
+ 28          [-1, 16]  1         0  models.common.Concat                    [1]
+ 29                -1  4  11377920  models.common.C3                        [1280, 960, 4, False]
+ 30                -1  1   8296320  models.common.Conv                      [960, 960, 3, 2]
+ 31          [-1, 12]  1         0  models.common.Concat                    [1]
+ 32                -1  4  20495360  models.common.C3                        [1920, 1280, 4, False]
+ 33  [23, 26, 29, 32]  1    105732  models.yolo.Detect                      [6, [[19, 27, 44, 40, 38, 94], [96, 68, 86, 152, 180, 137], [140, 301, 303, 264, 238, 542], [436, 615, 739, 380, 925, 792]], [320, 640, 960, 1280]]
+Model summary: 733 layers, 140083492 parameters, 140083492 gradients
+Transferred 955/963 items from yolov5x6.pt
+Scaled weight_decay = 0.0005
+[34m[1moptimizer:[39m[22m SGD with parameter groups 159 weight (no decay), 163 weight, 163 bias
+[34m[1mtrain: [39m[22mScanning '/Users/joseignaciovillargallardo/Desktop/Tesis/train_data/../tr
+[34m[1mwandb[39m[22m: Currently logged in as: [33mvojojo[39m ([33mvojojor[39m). Use [1m`wandb login --relogin`[22m to force relogin
+[34m[1mwandb[39m[22m: Currently logged in as: [33mvojojo[39m ([33mvojojor[39m). Use [1m`wandb login --relogin`[22m to force relogin
+[34m[1mwandb[39m[22m: Currently logged in as: [33mvojojo[39m ([33mvojojor[39m). Use [1m`wandb login --relogin`[22m to force relogin
+[34m[1mwandb[39m[22m: Currently logged in as: [33mvojojo[39m ([33mvojojor[39m). Use [1m`wandb login --relogin`[22m to force relogin
+[34m[1mval: [39m[22mScanning '/Users/joseignaciovillargallardo/Desktop/Tesis/train_data/../trai
+[34m[1mwandb[39m[22m: Currently logged in as: [33mvojojo[39m ([33mvojojor[39m). Use [1m`wandb login --relogin`[22m to force relogin
+[34m[1mwandb[39m[22m: Currently logged in as: [33mvojojo[39m ([33mvojojor[39m). Use [1m`wandb login --relogin`[22m to force relogin
+[34m[1mwandb[39m[22m: Currently logged in as: [33mvojojo[39m ([33mvojojor[39m). Use [1m`wandb login --relogin`[22m to force relogin
+[34m[1mwandb[39m[22m: Currently logged in as: [33mvojojo[39m ([33mvojojor[39m). Use [1m`wandb login --relogin`[22m to force relogin
+Plotting labels to runs/train/exp4/labels.jpg...
+[34m[1mAutoAnchor: [39m[22m6.08 anchors/target, 1.000 Best Possible Recall (BPR). Current anchors are a good fit to dataset ✅
+Image sizes 512 train, 512 val
+Using 4 dataloader workers
+Logging results to [1mruns/train/exp4
+Starting training for 1 epochs...
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
