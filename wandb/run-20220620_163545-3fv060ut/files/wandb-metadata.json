@@ -1,0 +1,33 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.5",
+    "heartbeatAt": "2022-06-20T20:35:49.772742",
+    "startedAt": "2022-06-20T20:35:45.625222",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [
+        "--img",
+        "128",
+        "--batch",
+        "64",
+        "--epochs",
+        "20",
+        "--data",
+        "customdata.yaml",
+        "--weights",
+        "yolov5s.pt"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ultralytics/yolov5",
+        "commit": "1156a323f8fc221d5c1a36c700e72e129419d187"
+    },
+    "email": "jose.villar.12@sansano.usm.cl",
+    "root": "/Users/joseignaciovillargallardo/Desktop/Tesis/yolov5",
+    "host": "MacBook-Air-de-Jose.local",
+    "username": "joseignaciovillargallardo",
+    "executable": "/opt/anaconda3/bin/python"
+}
