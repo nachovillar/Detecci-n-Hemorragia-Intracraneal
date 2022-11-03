@@ -26,7 +26,7 @@ data_Initial_Manual_Labeling = pd.read_csv(Initial_Manual_Labeling)
 data_Extrapolation_to_All_Series = pd.read_csv(Extrapolation_to_All_Series)
 data_Extrapolation_to_Selected_Series = pd.read_csv(Extrapolation_to_Selected_Series)
 
-columns_of_interest = data_Extrapolation_to_Selected_Series.drop(['SeriesInstanceUID', 'StudyInstanceUID', 'labelType'], axis=1)
+columns_of_interest = data_Extrapolation_to_All_Series.drop(['SeriesInstanceUID', 'StudyInstanceUID', 'labelType'], axis=1)
 columns_of_interest = columns_of_interest.drop(columns_of_interest.columns[[0]], axis='columns')
 #---------------------------------------------------------------------------------------------------------------------
 
